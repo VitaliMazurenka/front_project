@@ -7,10 +7,11 @@ import Munich from "pages/Munich";
 import Rheinland from "pages/Rheinland";
 import Frankfurt from "pages/Frankfurt";
 import Hamburg from "pages/Hamburg";
-import AuthRootComponent from "components/auth/Auth";
 import UserAccount from "components/updateUserSubscriptions";
 import Berlin from "pages/Berlin";
 import InfoSearchPage from "pages/InfoSearchPage";
+import RegisterPage from "components/auth/register";
+import LoginPage from "components/auth/login";
 
 
 function App() {
@@ -35,19 +36,19 @@ function App() {
           <Route path="/berlin/doctors/orthopedists" element={<Berlin />} />
           <Route path="/berlin/doctors/cardiologists" element={<Berlin />} />
           <Route path="/berlin/doctors/dermatologists" element={<Berlin />} />
-          <Route path="/munich" element={<Munich />} />
-          <Route path="/munich/cafes-restaurants" element={<Munich />} />
-          <Route path="/munich/children" element={<Munich />} />
-          <Route path="/munich/shops" element={<Munich />} />
-          <Route path="/munich/services/legal_services" element={<Munich />} />
-          <Route path="/munich/services/translators" element={<Munich />} />
-          <Route path="/munich/services/hair_beauty" element={<Munich />} />
-          <Route path="/munich/doctors/physicians" element={<Munich />} />
-          <Route path="/munich/doctors/stomatologists" element={<Munich />} />
-          <Route path="/munich/doctors/pediatrists" element={<Munich />} />
-          <Route path="/munich/doctors/orthopedists" element={<Munich />} />
-          <Route path="/munich/doctors/cardiologists" element={<Munich />} />
-          <Route path="/munich/doctors/dermatologists" element={<Munich />} />
+          <Route path="/muenchen" element={<Munich />} />
+          <Route path="/muenchen/cafes-restaurants" element={<Munich />} />
+          <Route path="/muenchen/children" element={<Munich />} />
+          <Route path="/muenchen/shops" element={<Munich />} />
+          <Route path="/muenchen/services/legal_services" element={<Munich />} />
+          <Route path="/muenchen/services/translators" element={<Munich />} />
+          <Route path="/muenchen/services/hair_beauty" element={<Munich />} />
+          <Route path="/muenchen/doctors/physicians" element={<Munich />} />
+          <Route path="/muenchen/doctors/stomatologists" element={<Munich />} />
+          <Route path="/muenchen/doctors/pediatrists" element={<Munich />} />
+          <Route path="/muenchen/doctors/orthopedists" element={<Munich />} />
+          <Route path="/muenchen/doctors/cardiologists" element={<Munich />} />
+          <Route path="/muenchen/doctors/dermatologists" element={<Munich />} />
           <Route path="/frankfurt" element={<Frankfurt />} />
           <Route path="/frankfurt/cafes-restaurants" element={<Frankfurt />} />
           <Route path="/frankfurt/children" element={<Frankfurt />} />
@@ -141,8 +142,8 @@ function App() {
           <Route path="/hamburg/doctors/orthopedists" element={<Hamburg />} />
           <Route path="/hamburg/doctors/cardiologists" element={<Hamburg />} />
           <Route path="/hamburg/doctors/dermatologists" element={<Hamburg />} />
-          <Route path="/login" element={<AuthRootComponent />} />
-          <Route path="/user_login/register" element={<AuthRootComponent />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/user_login/register" element={<RegisterPage />} />
           <Route path="/user_login/user_account" element={<UserAccount />} />
           <Route path="*" element="Page is not found" />
         </Routes>
